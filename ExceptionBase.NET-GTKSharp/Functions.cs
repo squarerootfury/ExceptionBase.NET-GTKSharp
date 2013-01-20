@@ -13,7 +13,7 @@ namespace ExceptionBase.NETGTKSharp
 				//DEBUG ONLY:libTerminus.MessageBox.Show (arguments.Replace ("&", "&amp;"), "ff", Gtk.ButtonsType.Cancel, Gtk.MessageType.Error, null);
 				oWeb.Headers.Add ("Content-Type", "application/x-ww-form-urlencoded");
 				string ua = @"WebClient (" + UserDetails.ReadSTDOutput ("lsb_release", "--d").Replace ("Description:", "").Trim () + ") ExceptionBase.NET " + Assembly.GetCallingAssembly ().GetName ().Version.ToString ();
-				libTerminus.MessageBox.Show (ua, "ff", Gtk.ButtonsType.Cancel, Gtk.MessageType.Error, null);
+				//libTerminus.MessageBox.Show (ua, "ff", Gtk.ButtonsType.Cancel, Gtk.MessageType.Error, null);
 				oWeb.Headers.Add (HttpRequestHeader.UserAgent, ua);
 				Byte[] bytArguments = Encoding.UTF8.GetBytes (arguments);
 				Byte[] bytRetData = oWeb.UploadData (url, "POST", bytArguments);

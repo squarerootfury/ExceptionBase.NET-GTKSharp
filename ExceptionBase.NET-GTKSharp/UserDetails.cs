@@ -28,7 +28,7 @@ namespace ExceptionBase.NETGTKSharp
 			GtkLabel.Text = language.errorDetailsCaption;
 			label6.Text = app.Version;
 			label7.Text = Environment.Version.ToString ();
-			label8.Text = ReadSTDOutput ("lsb_release", "--d").Replace ("Description:", "").Trim ();
+			label8.Text = ReadSTDOutput ("lsb_release", "--d").Replace ("Description:", "").Trim () + " " + ReadSTDOutput ("arch", "");
 			this.image26.Pixbuf = app.Icon;
 			label4.Text = exinfo.Message;
 			label5.Text = exinfo.Inner;

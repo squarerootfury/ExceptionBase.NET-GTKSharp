@@ -20,8 +20,8 @@ namespace ExceptionBase.NETGTKSharp
 			winDescription = "Es ist ein schwerwiegender Fehler aufgetreten. Bitte beschreiben Sie die Schritte, die zu dem Fehler geführt haben könnten, damit wir ihn so schnell wie möglich beheben können.";
 			tabInputCaption = "Beschreibung des Fehlers";
 			tabDetailedInfoCaption = "Weitere Informationen";
-			appVersionCaption = "ProgrammVersion";
-			netVersionCaption = ".NET - Version";
+			appVersionCaption = "Programmversion";
+			netVersionCaption = "CLI Version";
 			osVersionCaption = "Betriebssystem";
 			errorDetailsCaption = "Fehler - Details";
 			bSkip = "Überspringen";
